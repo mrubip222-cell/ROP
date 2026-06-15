@@ -3,17 +3,53 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Custom Webmap</title>
+    <title>ROP Sites Map - Ed Z'berg Sugar Pine Point State Park</title>
     <link rel="stylesheet" href="./style.css">
 
+    <!--
+  Cartographer: [Mariana R. Padilla]
+  Institution: [University of California, Berkeley]
+  Data Source: [e.g., USGS EarthExplorer]
+  Created: 2026
+-->
   </head>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css'>
     
   <body>
+    <h1> ROP Sites Map - Ed Z'berg Sugar Pine Point State Park</h1>
+   
   <script src='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js'></script>
-<div id="map">
-</div>
-    <script  src="./script.js"></script>
 
+
+  <div id="map">
+</div>
+
+  <div id="north-arrow">
+    N
+    <div class="arrow"></div>
+</div>
+
+<div id="inset-map"></div>
+
+<button id="context-toggle">
+    Indigenous Context
+</button>
+
+<div id="context-panel" class="hidden">
+
+
+    <p>Ed Z'berg Sugar Pine Point State Park is located within the
+    ancestral homeland of the Wá∙šiw (Washoe) people. Known as 
+    <em>dáʔaw</em> by the Wá∙šiw, Lake Tahoe has long since been 
+    a sacred place of gathering, stewardship, and cultural significance.
+    General Creek was renamed in 2024 to dukMé?em wáta, "Wave Creek"
+    to recognize the history and presence of the Wá∙šiw people and their
+   connection to the landscape.</p>
+
+</div>
+
+<script  src="./script.js"></script>
   </body>
   
 </html>
+
